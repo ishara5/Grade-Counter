@@ -41,6 +41,17 @@ initiate_count = zero_list(len(Final_grades))
 Final_grade_count = dict(zip(Final_grades, initiate_count))
 
 file_path = "E:\Programming\Python"
+
+#enter file path
+if file_path == "NULL":
+    file_path = str(input("Enter the file path: "))
+else:
+    choice = input("Do you want to change the file path? (y/n): ")
+    if choice == "y":
+        file_path = str(input("Enter the file path: "))
+    else:
+        print("File path is set to default: ", file_path)
+    
 text_files = get_file_name(file_path)
 
 for i in range(len(text_files)):
