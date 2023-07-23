@@ -58,7 +58,7 @@ while True:
 
     # get file names
     text_files = get_file_name(file_path)
-
+    print("Available text files in input directory: ")
     for i in range(len(text_files)):
         print(i+1, ":", text_files[i])
         
