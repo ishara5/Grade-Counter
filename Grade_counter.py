@@ -44,13 +44,13 @@ file_path = "E:\Programming\Python"
 
 #enter file path
 if file_path == "NULL":
-    file_path = str(input("Enter the file path: "))
+    file_path = str(input("Enter the Directory path that your result sheets located: "))
 else:
-    choice = input("Do you want to change the file path? (y/n): ")
+    choice = input("Do you want to change the Directory path? (y/n): ")
     if choice == "y":
-        file_path = str(input("Enter the file path: "))
+        file_path = str(input("Enter the Directory path: "))
     else:
-        print("File path is set to default: ", file_path)
+        print("Directory path is set to default: ", file_path)
     
 text_files = get_file_name(file_path)
 
