@@ -25,7 +25,7 @@ def zero_list(n):
         list.append(0)
     return list   
 
-file_path = "E:\Programming\Python"
+file_path = "NULL"
 
 #enter file path
 if file_path == "NULL":
